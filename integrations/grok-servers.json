@@ -1,0 +1,10 @@
+{
+  "fda": {
+    "url": "https://food-recall-check.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "get_food_recall",
+      "recent_food_recalls",
+      "search_food_recalls"
+    ]
+  }
+}

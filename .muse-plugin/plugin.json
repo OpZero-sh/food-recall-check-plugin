@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "name": "food-recall-check",
+  "version": "1.0.0",
+  "displayName": "Food Recall Check",
+  "description": "Match product labels, lot codes, and distribution details against FDA food recall enforcement reports.",
+  "compat": {
+    "source": "native",
+    "manifestDir": ".muse-plugin"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "id": "check-a-product",
+        "path": "skills/check-a-product/SKILL.md"
+      }
+    ],
+    "mcpServers": [
+      {
+        "id": "fda",
+        "transport": "http",
+        "url": "https://food-recall-check.mcp.opzero.sh/mcp"
+      }
+    ]
+  }
+}

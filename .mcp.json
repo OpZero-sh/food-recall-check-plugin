@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fda": {
+      "type": "http",
+      "url": "https://food-recall-check.mcp.opzero.sh/mcp"
+    }
+  }
+}

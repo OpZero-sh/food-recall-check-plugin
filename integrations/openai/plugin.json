@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "food-recall-check",
+  "version": "1.0.0",
+  "description": "Match product labels, lot codes, and distribution details against FDA food recall enforcement reports.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://github.com/OpZero-sh/food-recall-check-plugin",
+  "repository": "https://github.com/OpZero-sh/food-recall-check-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Food Recall Check",
+        "shortDescription": "Check a food recall",
+        "longDescription": "Match product labels, lot codes, and distribution details against FDA food recall enforcement reports.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/OpZero-sh/food-recall-check-plugin",
+        "privacyPolicyURL": "https://opzero.sh/privacy",
+        "supportURL": "https://opzero.sh/support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}
