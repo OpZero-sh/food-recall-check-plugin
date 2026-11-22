@@ -13,6 +13,14 @@
       {
         "id": "check-a-product",
         "path": "skills/check-a-product/SKILL.md"
+      },
+      {
+        "id": "recent-recalls",
+        "path": "skills/recent-recalls/SKILL.md"
+      },
+      {
+        "id": "recall-history",
+        "path": "skills/recall-history/SKILL.md"
       }
     ],
     "mcpServers": [
