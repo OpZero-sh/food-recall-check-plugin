@@ -45,7 +45,7 @@ Both agents are limited to the three read only lookup tools of the connector.
 
 ### Hooks
 
-None. The plugin installs no hooks and runs no scripts on your machine during use.
+None. The plugin has no hooks and runs no code on your machine.
 
 ## What the plugin connects to
 
@@ -54,13 +54,16 @@ None. The plugin installs no hooks and runs no scripts on your machine during us
 
 ## Optional files for other clients
 
-These files are not used by Claude. Nothing in them runs unless you run it yourself.
+These files are not used by Claude. They are configuration only and none of them is a program.
 
-- `integrations/grok_example.py` is a sample script for the xAI API. When you run it without the dry run flag, it reads `XAI_API_KEY` from your environment, and `XAI_MODEL` if set, and sends your question with the server address and tool list to `https://api.x.ai/v1/responses`. With `--dry-run` it prints the request and sends nothing.
-- `integrations/grok-servers.json` holds the server address and tool list that script uses.
+- `integrations/grok-servers.json` holds the server address and tool list for the xAI API sample.
 - `integrations/openai/` holds the manifest and connection file for the ChatGPT and Codex package.
-- `scripts/build_openai.py` builds that package as a ZIP on your machine from the manifests, the skills, the license and the product icon. It makes no network requests.
 - `.muse-plugin/plugin.json` is the manifest for Muse Code.
+
+The two scripts that read these files are not in this repository. They are in the catalog repository, [OpZero-sh/plugins](https://github.com/OpZero-sh/plugins), and run only if you clone it and run them yourself.
+
+- `tools/build_openai.py` builds the ChatGPT and Codex package as a ZIP on your machine from the skills, the license, the product icon and `integrations/openai/`. It makes no network requests.
+- `tools/grok_example.py` is a sample script for the xAI API. It reads `integrations/grok-servers.json`. When you run it without the dry run flag, it reads `XAI_API_KEY` from your environment, and `XAI_MODEL` if set, and sends your question with the server address and tool list to `https://api.x.ai/v1/responses`. With `--dry-run` it prints the request and sends nothing.
 
 ## Sources and coverage
 
